@@ -1,0 +1,111 @@
+V1	Library	Tissue	Status	Bestrahlung	Time	Mouse	Sample	Konz	RIN	Barcodes	Platte	PCR Produkt Konz	µl für Bank	ID	Group	Status_Time	Tissue_Time	fastq_name
+1	5	left ear	Control	nein	10m	M1	Li M1 10' gefällt	73.7	7.9	32	P1	14.6	0.3	Li M1 10'	Control_left ear	Control_10m	left ear_10m	V350021571_L01_28_1
+2	6	left ear	Treatment	ja	60m	M10	Li M10 1h B gefällt	118.4	9.2	30	P4	2.18	2.09	Li M10 1h B	Treatment_left ear	Treatment_60m	left ear_60m	V350019036_L02_30_1
+3	7	left ear	Control	nein	30m	M11	Li M11 30' K gefällt	56.3	8.5	3	P4	688	6.62	Li M11 30' K	Control_left ear	Control_30m	left ear_30m	V350019036_L03_3_1
+4	6	left ear	Treatment	ja	30m	M12	Li M12 30' B gefällt	98.3	8.0	29	P4	5.48	0.83	Li M12 30' B	Treatment_left ear	Treatment_30m	left ear_30m	V350019036_L02_29_1
+5	7	left ear	Control	nein	120m	M13	Li M13 2h K gefällt	83.0	8.5	13	P4	1.18	3.86	Li M13 2h K	Control_left ear	Control_120m	left ear_120m	V350019036_L03_13_1
+6	6	left ear	Treatment	ja	120m	M14	Li M14 2h B gefällt	128.4	8.7	31	P4	2.14	2.13	Li M14 2h B	Treatment_left ear	Treatment_120m	left ear_120m	V350019036_L02_31_1
+7	7	left ear	Control	nein	10m	M15	Li M15 10' K gefällt	65.2	8.6	2	P4	5.84	0.78	Li M15 10' K	Control_left ear	Control_10m	left ear_10m	V350019036_L03_2_1
+8	6	left ear	Treatment	ja	10m	M16	Li M16 10' B gefällt	54.6	9.2	28	P4	6.04	0.75	Li M16 10' B	Treatment_left ear	Treatment_10m	left ear_10m	V350019036_L02_28_1
+9	9	left ear	Control	nein	120m	M17	Li M17 2h K gefällt	91.0	6.9	15	P4	5.2	0.88	Li M17 2h K	Control_left ear	Control_120m	left ear_120m	V350018248_L01_15_1
+10	9	left ear	Control	nein	60m	M18	Li M18 1h K gefällt	39.3	8.2	14	P4	4.24	1.07	Li M18 1h K	Control_left ear	Control_60m	left ear_60m	V350018248_L01_14_1
+11	8	left ear	Treatment	ja	120m	M19	Li M19 2h B gefällt	116.0	8.3	1	P4	4.42	1.03	Li M19 2h B	Treatment_left ear	Treatment_120m	left ear_120m	V350019036_L04_1_1
+12	5	left ear	Control	nein	30m	M2	Li M2 30' gefällt	168.9	8.2	1	P1	4.44	0.99	Li M2 30'	Control_left ear	Control_30m	left ear_30m	V350021571_L01_29_1
+13	8	left ear	Treatment	ja	60m	M20	Li M20 1h B gefällt	68.2	8.9	32	P4	16.9	0.27	Li M20 1h B	Treatment_left ear	Treatment_60m	left ear_60m	V350019036_L04_32_1
+14	5	left ear	Control	nein	0m	M21	Li M21 direkt K gefällt	162.1	6.2	31	P1	14.6	0.3	Li M21 direkt K	Control_left ear	Control_0m	left ear_0m	V350021571_L01_27_1
+15	5	left ear	Treatment	ja	0m	M22	Li M22 0h B gefällt	67.8	8.4	13	P1	4	1.09	Li M22 0h B	Treatment_left ear	Treatment_0m	left ear_0m	V350021571_L01_1_1
+16	6	left ear	Treatment	ja	0m	M23	Li M23 0h B gefällt	120.2	9.3	27	P4	5.14	0.89	Li M23 0h B	Treatment_left ear	Treatment_0m	left ear_0m	V350019036_L02_27_1
+17	7	left ear	Control	nein	0m	M24	Li M24 direkt K  gefällt	64.2	6.7	1	P4	2.6	1.75	Li M24 direkt K	Control_left ear	Control_0m	left ear_0m	V350019036_L03_1_1
+18	9	left ear	Control	nein	10m	M25	Li M25 K gefällt	88.3	7.2	4	P4	2.28	2.0	Li M25 K	Control_left ear	Control_10m	left ear_10m	V350018248_L01_4_1
+19	11	left ear	Control	nein	10m	M26	Li M26 10' K gefällt	51.1	8.3	4	P4	12.4	0.37	Li M26 10' K	Control_left ear	Control_10m	left ear_10m	V350018248_L03_30_1
+20	9	left ear	Control	nein	30m	M27	Li M27 30' K gefällt	64.5	6.5	13	P4	1.32	3.45	Li M27 30' K	Control_left ear	Control_30m	left ear_30m	V350018248_L01_13_1
+21	7	left ear	Treatment	ja	30m	M29	Li M29 30' B gefällt	102.0	8.6	25	P4	5.42	0.84	Li M29 30' B	Treatment_left ear	Treatment_30m	left ear_30m	V350019036_L03_25_1
+22	5	left ear	Treatment	ja	10m	M3	Li M3 10' B gefällt	227.9	8.0	14	P1	5.3	0.83	Li M3 10' B	Treatment_left ear	Treatment_10m	left ear_10m	V350021571_L01_2_1
+23	7	left ear	Treatment	ja	60m	M31	Li M31 1h B gefällt	57.7	9.0	26	P4	6.82	0.67	Li M31 1h B	Treatment_left ear	Treatment_60m	left ear_60m	V350019036_L03_26_1
+24	11	left ear	Control	nein	120m	M32	Li M32 2h K gefällt	415.0	8.1	15	P4	11.9	0.38	Li M32 2h K	Control_left ear	Control_120m	left ear_120m	V350018248_L03_1_1
+25	7	left ear	Treatment	ja	120m	M33	Li M33 2h B gefällt	130.7	8.4	27	P4	1.24	3.68	Li M33 2h B	Treatment_left ear	Treatment_120m	left ear_120m	V350019036_L03_27_1
+26	11	left ear	Control	nein	10m	M34	Li M34 10' K gefällt	3.0	8.2	26	P4	**	10.3	Li M34 10' K	Control_left ear	Control_10m	left ear_10m	V350018248_L03_4_1
+27	11	left ear	Control	nein	30m	M35	Li M35 30' K gefällt	75.6	7.9	13	P4	4.84	0.94	Li M35 30' K	Control_left ear	Control_30m	left ear_30m	V350018248_L03_31_1
+28	8	left ear	Treatment	ja	10m	M36	Li M36 10' B gefällt	194.7	8.8	30	P4	13.5	0.34	Li M36 10' B	Treatment_left ear	Treatment_10m	left ear_10m	V350019036_L04_30_1
+29	8	left ear	Treatment	ja	30m	M37	Li M37 30' B gefällt	138.3	8.7	31	P4	4.42	1.03	Li M37 30' B	Treatment_left ear	Treatment_30m	left ear_30m	V350019036_L04_31_1
+30	8	left ear	Treatment	ja	0m	M38	Li M38 0h K gefällt	92.6	9.4	29	P4	7.02	0.65	Li M38 0h K	Treatment_left ear	Treatment_0m	left ear_0m	V350019036_L04_29_1
+31	7	left ear	Treatment	ja	0m	M39	Li M39 0h B gefällt	86.5	9.1	15	P4	6.62	0.69	Li M39 0h B	Treatment_left ear	Treatment_0m	left ear_0m	V350019036_L03_15_1
+32	5	left ear	Treatment	ja	30m	M4	Li M4 30' B gefällt	86.1	4.9	15	P1	4.66	0.94	Li M4 30' B	Treatment_left ear	Treatment_30m	left ear_30m	V350021571_L01_3_1
+33	11	left ear	Control	nein	120m	M40	Li M40 2h K gefällt	87.5	7.4	29	P4	8.64	0.53	Li M40 2h K	Control_left ear	Control_120m	left ear_120m	V350018248_L03_15_1
+34	9	left ear	Treatment	ja	120m	M41	Li M41 2h B gefällt	94.2	9.2	29	P4	1.7	2.68	Li M41 2h B	Treatment_left ear	Treatment_120m	left ear_120m	V350018248_L01_29_1
+35	12	left ear	Control	nein	120m	M42	Li M42 2h K gefällt	112.2	8.8	13				Li M42 2h K gefällt	Control_left ear	Control_120m	left ear_120m	V350018248_L04_26_1
+36	10	left ear	Treatment	ja	120m	M43	Li M43 2h B gefällt	176.0	8.8	3	P4	4.42	1.03	Li M43 2h B	Treatment_left ear	Treatment_120m	left ear_120m	V350018248_L02_3_1
+37	11	left ear	Control	nein	0m	M44	Li M44 0h K gefällt	98.0	8.1	25	P4	10	0.46	Li M44 0h K	Control_left ear	Control_0m	left ear_0m	V350018248_L03_3_1
+38	11	left ear	Control	nein	0m	M45	Li M45 0h K gefällt	151.7	8.2	3	P4	15.3	0.3	Li M45 0h K	Control_left ear	Control_0m	left ear_0m	V350018248_L03_29_1
+39	12	left ear	Control	nein	10m	M47	Li M47 10' gefällt	104.2	6.9	2				Li M47 10' gefällt	Control_left ear	Control_10m	left ear_10m	V350018248_L04_15_1
+40	11	left ear	Control	nein	10m	M48	Li M48 10' K gefällt	69.2	8.9	27	P4	12.7	0.36	Li M48 10' K	Control_left ear	Control_10m	left ear_10m	V350018248_L03_13_1
+41	11	left ear	Control	nein	10m	M49	Li M49 10' K gefällt	78.0	8.7	28	P4	10.3	0.44	Li M49 10' K	Control_left ear	Control_10m	left ear_10m	V350018248_L03_14_1
+42	7	left ear	Control	nein	60m	M5	Li M5 1h gefällt	15.0	8.2	4	P4	4.74	0.96	Li M5 1h	Control_left ear	Control_60m	left ear_60m	V350019036_L03_4_1
+43	12	left ear	Control	nein	0m	M50	Li M50 0h K gefällt	76.7	7.4	3				Li M50 0h K gefällt	Control_left ear	Control_0m	left ear_0m	V350018248_L04_16_1
+44	5	left ear	Control	nein	120m	M7	Li M7 K gefällt	120.2	8.3	3	P1	17.8	0.25	Li M7 K	Control_left ear	Control_120m	left ear_120m	V350021571_L01_31_1
+45	5	left ear	Treatment	ja	120m	M8	Li M8 2h B gefällt	173.7	8.4	25	P1	13.9	0.31	Li M8 2h B	Treatment_left ear	Treatment_120m	left ear_120m	V350021571_L01_13_1
+46	5	left ear	Control	nein	60m	M9	Li M9 1h K gefällt	159.2	7.2	2	P1	5.04	0.87	Li M9 1h K	Control_left ear	Control_60m	left ear_60m	V350021571_L01_30_1
+47	9	right ear	Treatment	nein	0m	M1a	Maus 1 -0 min  r%	121.9	7.8	30	P4	7.26	0.63	Maus 1 -0 min	Treatment_right ear	Treatment_0m	right ear_0m	V350018248_L01_30_1
+48	10	right ear	Treatment	nein	60m	M10a	Maus 10 - 1h    r%	142.8	7.9	15	P4	1.75	2.6	Maus 10 - 1h	Treatment_right ear	Treatment_60m	right ear_60m	V350018248_L02_15_1
+49	10	right ear	Treatment	nein	0m	M2a	Maus 2 - 0 min    r%	177.9	8.4	4	P4	3.62	1.26	Maus 2 - 0 min	Treatment_right ear	Treatment_0m	right ear_0m	V350018248_L02_4_1
+50	10	right ear	Control	nein	0m	M3a	Maus 3 unbestrahlt	237.6	8.6	26	P4	5.24	0.87	Maus 3 unbestrahlt	Control_right ear	Control_0m	right ear_0m	V350018248_L02_26_1
+51	9	right ear	Treatment	nein	10m	M5a	Maus 5 - 10 min    r%	183.7	8.1	31	P4	4.3	1.06	Maus 5 - 10 min	Treatment_right ear	Treatment_10m	right ear_10m	V350018248_L01_31_1
+52	10	right ear	Treatment	nein	10m	M6a	Maus 6 - 10 min    r%	137.1	8.0	13	P4	3.86	1.18	Maus 6 - 10 min	Treatment_right ear	Treatment_10m	right ear_10m	V350018248_L02_13_1
+53	9	right ear	Treatment	nein	30m	M7a	Maus 7 - 30 min    r%	171.2	7.8	32	P4	696	6.55	Maus 7 - 30 min	Treatment_right ear	Treatment_30m	right ear_30m	V350018248_L01_32_1
+54	10	right ear	Treatment	nein	30m	M8a	Maus 8 - 30 min    r%	173.4	8.7	14	P4	1.33	3.43	Maus 8 - 30 min	Treatment_right ear	Treatment_30m	right ear_30m	V350018248_L02_14_1
+55	9	right ear	Treatment	nein	60m	M9a	Maus 9 - 1h    r%	242.9	8.3	1	P4	5.62	0.81	Maus 9 - 1h	Treatment_right ear	Treatment_60m	right ear_60m	V350018248_L01_1_1
+56	6	right ear	Control	nein	10m	M1	Re M1 10' gefällt	102.9	7.5	15	P4	7.18	0.63	Re M1 10'	Control_right ear	Control_10m	right ear_10m	V350019036_L02_15_1
+57	6	right ear	Treatment	nein	60m	M10	Re M10 1h gefällt	74.2	9.1	3	P4	6.4	0.71	Re M10 1h	Treatment_right ear	Treatment_60m	right ear_60m	V350019036_L02_3_1
+58	8	right ear	Control	nein	30m	M11	Re M11 30' K gefällt	3.8	8.1	26	P4	7.38	0.62	Re M11 30' K	Control_right ear	Control_30m	right ear_30m	V350019036_L04_26_1
+59	6	right ear	Treatment	nein	30m	M12	Re M12 30' gefällt	76.3	9.4	2	P4	3.68	1.24	Re M12 30'	Treatment_right ear	Treatment_30m	right ear_30m	V350019036_L02_2_1
+60	8	right ear	Control	nein	120m	M13	Re M13 2h K gefällt	89.2	8.4	28	P4	15.6	0.29	Re M13 2h K	Control_right ear	Control_120m	right ear_120m	V350019036_L04_28_1
+61	6	right ear	Treatment	nein	120m	M14	Re M14 2h gefällt	50.8	8.9	4	P4	6.66	0.68	Re M14 2h	Treatment_right ear	Treatment_120m	right ear_120m	V350019036_L02_4_1
+62	8	right ear	Control	nein	10m	M15	Re M15 10' K gefällt	159.2	8.3	25	P4	16.8	0.27	Re M15 10' K	Control_right ear	Control_10m	right ear_10m	V350019036_L04_25_1
+63	6	right ear	Treatment	nein	10m	M16	Re M16 10' gefällt	55.8	9.1	1	P4	0.34	9.0	Re M16 10'	Treatment_right ear	Treatment_10m	right ear_10m	V350019036_L02_1_1
+64	10	right ear	Control	nein	120m	M17	Re M17 2h K gefällt	77.6	8.9	30	P4	802	5.68	Re M17 2h K	Control_right ear	Control_120m	right ear_120m	V350018248_L02_30_1
+65	10	right ear	Control	nein	60m	M18	Re M18 1h K gefällt	65.1	8.5	29	P4	3.44	1.32	Re M18 1h K	Control_right ear	Control_60m	right ear_60m	V350018248_L02_29_1
+66	8	right ear	Treatment	nein	120m	M19	Re M19 2h gefällt	88.8	8.7	14	P4	21	0.22	Re M19 2h	Treatment_right ear	Treatment_120m	right ear_120m	V350019036_L04_14_1
+67	6	right ear	Control	nein	30m	M2	Re M2 30' gefällt	147.9	7.2	16	P4	4.54	1.0	Re M2 30'	Control_right ear	Control_30m	right ear_30m	V350019036_L02_16_1
+68	8	right ear	Treatment	nein	60m	M20	Re M20 1h  gefällt	89.9	9.2	13	P4	13.9	0.33	Re M20 1h	Treatment_right ear	Treatment_60m	right ear_60m	V350019036_L04_13_1
+69	6	right ear	Control	nein	0m	M21	Re M21 direkt K gefällt	64.5	5.9	14	P4	7.86	0.58	Re M21 direkt K	Control_right ear	Control_0m	right ear_0m	V350019036_L02_14_1
+70	5	right ear	Treatment	nein	0m	M22	Re M22 0h  gefällt	101.6	7.9	26	P1	10.7	0.41	Re M22 0h	Treatment_right ear	Treatment_0m	right ear_0m	V350021571_L01_14_1
+71	6	right ear	Treatment	nein	0m	M23	Re M23 0h  gefällt	69.0	9.8	32	P4	3.12	1.46	Re M23 0h	Treatment_right ear	Treatment_0m	right ear_0m	V350019036_L02_32_1
+72	8	right ear	Control	nein	0m	M24	Re M24 direkt K  gefällt	54.3	7.1	16	P4	10.7	0.43	Re M24 direkt K	Control_right ear	Control_0m	right ear_0m	V350019036_L04_16_1
+73	10	right ear	Control	nein	10m	M25	Re M25 K gefällt	87.8	7.0	27	P4	5.2	0.88	Re M25 K	Control_right ear	Control_10m	right ear_10m	V350018248_L02_27_1
+74	12	right ear	Control	nein	10m	M26	Re M26 10' K gefällt	48.4	8.3	29				Re M26 10' K gefällt	Control_right ear	Control_10m	right ear_10m	V350018248_L04_2_1
+75	10	right ear	Control	nein	30m	M27	Re M27 30' K gefällt	118.4	7.2	28	P4	4.34	1.05	Re M27 30' K	Control_right ear	Control_30m	right ear_30m	V350018248_L02_28_1
+76	7	right ear	Treatment	nein	30m	M29	Re M29 30' B gefällt	104.4	7.2	30	P4	8.12	0.56	Re M29 30' B	Treatment_right ear	Treatment_30m	right ear_30m	V350019036_L03_30_1
+77	5	right ear	Treatment	nein	10m	M3	Re M3 10' gefällt	72.4	8.2	27	P1	5.46	0.8	Re M3 10'	Treatment_right ear	Treatment_10m	right ear_10m	V350021571_L01_15_1
+78	7	right ear	Treatment	nein	60m	M31	Re M31 1h B gefällt	104.2	8.3	31	P4	9.22	0.49	Re M31 1h B	Treatment_right ear	Treatment_60m	right ear_60m	V350019036_L03_31_1
+79	12	right ear	Control	nein	120m	M32	Re M32 2h K gefällt	88.3	7.6	32				Re M32 2h K gefällt	Control_right ear	Control_120m	right ear_120m	V350018248_L04_13_1
+80	7	right ear	Treatment	nein	120m	M33	Re M33 2h B gefällt	4.4	7.0	32	P4	1.14	4.0	Re M33 2h B	Treatment_right ear	Treatment_120m	right ear_120m	V350019036_L03_32_1
+81	11	right ear	Control	nein	10m	M34	Re M34 10' K gefällt	94.7	8.3	31	P4	9.68	0.47	Re M34 10' K	Control_right ear	Control_10m	right ear_10m	V350018248_L03_25_1
+82	12	right ear	Control	nein	30m	M35	Re M35 30' K gefällt	94.1	8.6	30				Re M35 30' K gefällt	Control_right ear	Control_30m	right ear_30m	V350018248_L04_3_1
+83	8	right ear	Treatment	nein	10m	M36	Re M36 10' B gefällt	99.3	9.0	3	P4	14.9	0.31	Re M36 10' B	Treatment_right ear	Treatment_10m	right ear_10m	V350019036_L04_3_1
+84	8	right ear	Treatment	nein	30m	M37	Re M37 30' B gefällt	51.6	9.0	4	P4	6.8	0.67	Re M37 30' B	Treatment_right ear	Treatment_30m	right ear_30m	V350019036_L04_4_1
+85	8	right ear	Treatment	nein	0m	M38	Re M38 0h K gefällt	137.8	8.7	2	P4	1.92	2.37	Re M38 0h K	Treatment_right ear	Treatment_0m	right ear_0m	V350019036_L04_2_1
+86	7	right ear	Treatment	nein	0m	M39	Re M39 0h B gefällt	89.1	8.5	28	P4	5.42	0.84	Re M39 0h B	Treatment_right ear	Treatment_0m	right ear_0m	V350019036_L03_28_1
+87	5	right ear	Treatment	nein	30m	M4	Re M4 30' gefällt	192.4	5.2	28	P1	4.56	0.96	Re M4 30'	Treatment_right ear	Treatment_30m	right ear_30m	V350021571_L01_16_1
+88	11	right ear	Control	nein	120m	M40	Re M40 2h K gefällt	1.2	9.0	2	P4	3.76	1.21	Re M40 2h K	Control_right ear	Control_120m	right ear_120m	V350018248_L03_28_1
+89	9	right ear	Treatment	nein	120m	M41	Re M41 2h B gefällt	77.1	9.2	2	P4	618	7.37	Re M41 2h B	Treatment_right ear	Treatment_120m	right ear_120m	V350018248_L01_2_1
+90	12	right ear	Control	nein	120m	M42	Re M42 2h K gefällt	133.9	7.2	26				Re M42 2h K gefällt	Control_right ear	Control_120m	right ear_120m	V350018248_L04_31_1
+91	10	right ear	Treatment	nein	120m	M43	Re M43 2h B gefällt	142.9	8.3	16	P4	6.38	0.71	Re M43 2h B	Treatment_right ear	Treatment_120m	right ear_120m	V350018248_L02_16_1
+92	11	right ear	Control	nein	0m	M44	Re M44 0h K gefällt	81.3	8.1	30	P4	9.32	0.49	Re M44 0h K	Control_right ear	Control_0m	right ear_0m	V350018248_L03_16_1
+93	12	right ear	Control	nein	0m	M45	Re M45 0h K gefällt	114.0	7.1	28				Re M45 0h K gefällt	Control_right ear	Control_0m	right ear_0m	V350018248_L04_1_1
+94	12	right ear	Control	nein	10m	M47	Re M47 10' gefällt	1.4	7.3	15				Re M47 10' gefällt	Control_right ear	Control_10m	right ear_10m	V350018248_L04_28_1
+95	11	right ear	Control	nein	10m	M48	Re M48 10' K gefällt	96.0	9.3	32	P4	16	0.28	Re M48 10' K	Control_right ear	Control_10m	right ear_10m	V350018248_L03_26_1
+96	11	right ear	Control	nein	10m	M49	Re M49 10' K gefällt	38.1	9.4	1	P4	10.5	0.43	Re M49 10' K	Control_right ear	Control_10m	right ear_10m	V350018248_L03_27_1
+97	8	right ear	Control	nein	60m	M5	Re M5 1h gefällt	108.8	8.5	27	P4	13.3	0.34	Re M5 1h	Control_right ear	Control_60m	right ear_60m	V350019036_L04_27_1
+98	12	right ear	Control	nein	0m	M50	Re M50 0h K gefällt	118.4	7.3	16				Re M50 0h K gefällt	Control_right ear	Control_0m	right ear_0m	V350018248_L04_29_1
+99	6	right ear	Control	nein	120m	M7	Re M7 K gefällt	256.6	7.4	26	P4	1.75	2.6	Re M7 K	Control_right ear	Control_120m	right ear_120m	V350019036_L02_26_1
+100	5	right ear	Treatment	nein	120m	M8	Re M8 2h gefällt	107.6	7.6	30	P1	4.88	0.9	Re M8 2h	Treatment_right ear	Treatment_120m	right ear_120m	V350021571_L01_26_1
+101	6	right ear	Control	nein	60m	M9	Re M9 1h K gefällt	99.6	8.7	25	P4	2.48	1.84	Re M9 1h K	Control_right ear	Control_60m	right ear_60m	V350019036_L02_25_1
+102	9	left ear	Treatment	ja	0m	M1a	RNA Mausohr 1 -0h	105.3	8.4	25	P4	5.64	0.81	RNA Mausohr 1 -0h	Treatment_left ear	Treatment_0m	left ear_0m	V350018248_L01_25_1
+103	10	left ear	Treatment	ja	60m	M10a	RNA Mausohr 10 - 1h	171.9	8.7	2	P4	0.81	5.63	RNA Mausohr 10 - 1h	Treatment_left ear	Treatment_60m	left ear_60m	V350018248_L02_2_1
+104	10	left ear	Treatment	ja	0m	M2a	RNA Mausohr 2 -0h	259.5	9.0	31	P4	4.68	0.97	RNA Mausohr 2 -0h	Treatment_left ear	Treatment_0m	left ear_0m	V350018248_L02_31_1
+105	9	left ear	Control	nein	0m	M3a	RNA Mausohr 3 unbestrahlt- li	174.7	8.3	3	P4	5.08	0.9	RNA Mausohr 3 unbestrahlt- li	Control_left ear	Control_0m	left ear_0m	V350018248_L01_3_1
+106	9	left ear	Treatment	ja	10m	M5a	RNA Mausohr 5 - 10min	182.1	8.9	26	P4	4.94	0.92	RNA Mausohr 5 - 10min	Treatment_left ear	Treatment_10m	left ear_10m	V350018248_L01_26_1
+107	10	left ear	Treatment	ja	10m	M6a	RNA Mausohr 6 - 10min	207.6	8.6	32	P4	522	8.73	RNA Mausohr 6 - 10min	Treatment_left ear	Treatment_10m	left ear_10m	V350018248_L02_32_1
+108	9	left ear	Treatment	ja	30m	M7a	RNA Mausohr 7 - 30min	208.1	9.0	27	P4	4.98	0.92	RNA Mausohr 7 - 30min	Treatment_left ear	Treatment_30m	left ear_30m	V350018248_L01_27_1
+109	10	left ear	Treatment	ja	30m	M8a	RNA Mausohr 8 - 30min	218.8	9.0	1	P4	1.71	2.67	RNA Mausohr 8 - 30min	Treatment_left ear	Treatment_30m	left ear_30m	V350018248_L02_1_1
+110	9	left ear	Treatment	ja	60m	M9a	RNA Mausohr 9 - 1h	206.5	8.8	28	P4	3.12	1.46	RNA Mausohr 9 - 1h	Treatment_left ear	Treatment_60m	left ear_60m	V350018248_L01_28_1

@@ -1,0 +1,410 @@
+### GENERAL SETTINGS
+expr: data/expression/norm/miRNA_filtered_quantification_rpmmm_norm.detection_rate_100p_per_group.csv
+expr_log2: data/expression/norm/miRNA_filtered_quantification_rpmmm_norm_log2.detection_rate_100p_per_group.csv
+expr_log10: data/expression/norm/miRNA_filtered_quantification_rpmmm_norm_log10.detection_rate_100p_per_group.csv
+annot: data/annotation.csv
+miRNA_list: data/miRNA_list.csv
+mapping_info: data/mapping_info/mapping_vs_mm10.csv
+cleaning_stats: data/mapping_info/cleaning_stats.csv
+rna_composition_mapped: data/mapping_info/overall_composition.detailed.mapped_perc.csv
+rna_composition_total: data/mapping_info/overall_composition.detailed.total_perc.csv
+
+results_folder: results
+
+modules: [
+         rpmmm_norm, log2_transform, log10_transform, create_raw_detection_matrix, filter_expression_files_per_group,
+         alignment_stats_bar_plot, mapping_stats_bar_plot, diff_exp,
+         pca_scatter_plot, hclust_expression_heatmap_plot, fc_versus_expr_scatter_plot,  pvca_bar_plot, 
+         volcano_scatter_plot, mirna_expression_median_violin_plot, 
+         comp_diff_exp_values_heatmap_plot, correlation_comp_time_heatmap_plot_table, mirna_expression_over_time_box_plot, 
+         pathway_analysis_results_heatmap_plots, halushka_violin_plots, 
+         diff_exp_values_table, make_publication_folder
+         ] 
+
+common: 
+  parameters:
+    set_seed: 42
+  plots:
+    dpi: 600
+    font_family: Arial
+    image_height: 6
+    image_width: 9
+    image_units: cm
+    font_size: 9
+    font_size_header: 12
+
+colors:
+  - Status:
+      Treatment: "#fd002d"
+      Control: "#07bb00" 
+  - Time:
+      0m: "#C2D9EA" 
+      10m: "#85B3D5" 
+      30m: "#498DC1" 
+      60m: "#2F6289" 
+      120m: "#1A364C" 
+  - Group:
+      Treatment_left ear: "#7d0200" 
+      Treatment_right ear: "#ffa5a3" 
+      Control_left ear: "#035700"
+      Control_right ear: "#caff6e"
+  - Comparison:
+      Status__Treatment_vs_Control: "#9369b0"
+      Tissue__left ear_vs_right ear_Status=Treatment: "#ff4194"
+      Tissue__left ear_vs_right ear_Status=Control: "#00b173"
+      Status__Treatment_vs_Control_Tissue=left ear: "#ff7f00"
+      Status__Treatment_vs_Control_Tissue=right ear: "ffdd00"
+
+######
+
+diff_exp:
+  log_list: ["_log2", "_log10"]
+  adjustment: BH
+
+pca_scatter_plot:
+  properties: 
+    - p1: ["Time", "Group"]
+    - p2: ["Group", "Time"]
+    - p3: ["Time", "Status"]
+    - p3: ["Status", "Time"]
+
+hclust_expression_heatmap_plot:
+  methods: [hclust]
+  prop: Status 
+  additional_props: [Status, Group, Time]
+  top_list: [500, 250, 100, 50, 25, 10]
+  hclust_params:
+    scale: row
+    cluster: both
+    method: euclidean
+    ranking: cv
+    seed: [42]
+
+fc_versus_expr_scatter_plot:
+  diff_exp_logs: ["_log2", "_log10"]
+  thresholds:
+      fc: 1.5
+      adj_p_value: 0.05
+      auc: ""
+  comparisons:
+    - Time:
+        g: ["120m", "0m"]
+        subset: ["Status", "Treatment"]
+    - Time:
+        g: ["60m", "0m"]
+        subset: ["Status", "Treatment"]
+    - Time:
+        g: ["30m", "0m"]
+        subset: ["Status", "Treatment"]
+    - Time:
+        g: ["10m", "0m"]
+        subset: ["Status", "Treatment"]
+    - Time:
+        g: ["120m", "0m"]
+        subset: ["Status", "Control"]
+    - Time:
+        g: ["60m", "0m"]
+        subset: ["Status", "Control"]
+    - Time:
+        g: ["30m", "0m"]
+        subset: ["Status", "Control"]
+    - Time:
+        g: ["10m", "0m"]
+        subset: ["Status", "Control"]
+
+pvca_bar_plot:
+  properties: 
+    - [Status]
+    - [Tissue]
+    - [Time]
+    - [Mouse]
+  parameters:
+    min_var: 0.9
+    min_cutoff: 0 
+    keep_zeros: false
+
+volcano_scatter_plot:
+  diff_exp_logs: ["_log2"]
+  parameters:
+    updownregulated: 1.5
+    significance: 0.05
+    mineffectsize: 0.5
+  comparisons:
+    - Status:
+        g: ["Treatment", "Control"]
+        subset: []
+    - Status:
+        g: ["Treatment", "Control"]
+        subset: ["Time", "120m"]
+    - Status:
+        g: ["Treatment", "Control"]
+        subset: ["Tissue", "left ear"]
+    - Status:
+        g: ["Treatment", "Control"]
+        subset: ["Tissue", "right ear"]
+    - Status:
+        g: ["Treatment", "Control"]
+        subset: ["Tissue_Time", "left ear_120m"]
+    - Status:
+        g: ["Treatment", "Control"]
+        subset: ["Tissue_Time", "right ear_120m"]
+
+    - Tissue:
+        g: ["left ear", "right ear"]
+        subset: ["Status", "Treatment"]
+    - Tissue:
+        g: ["left ear", "right ear"]
+        subset: ["Status", "Control"]
+    - Tissue:
+        g: ["left ear", "right ear"]
+        subset: ["Status_Time", "Treatment_120m"]
+    - Tissue:
+        g: ["left ear", "right ear"]
+        subset: ["Status_Time", "Control_120m"]
+
+mirna_expression_median_violin_plot:
+  comparisons:
+    - Status:
+        g: ["Treatment", "Control"]
+        subset: []
+    - Status:
+        g: ["Treatment", "Control"]
+        subset: ["Time", "0m"]
+    - Status:
+        g: ["Treatment", "Control"]
+        subset: ["Time", "120m"]
+    - Status:
+        g: ["Treatment", "Control"]
+        subset: ["Tissue", "left ear"]
+    - Status:
+        g: ["Treatment", "Control"]
+        subset: ["Tissue", "right ear"]
+    - Status:
+        g: ["Treatment", "Control"]
+        subset: ["Tissue_Time", "left ear_0m"]
+    - Status:
+        g: ["Treatment", "Control"]
+        subset: ["Tissue_Time", "right ear_0m"]
+    - Status:
+        g: ["Treatment", "Control"]
+        subset: ["Tissue_Time", "left ear_120m"]
+    - Status:
+        g: ["Treatment", "Control"]
+        subset: ["Tissue_Time", "right ear_120m"]
+
+    - Status_Time:
+        g: ["Treatment_120m", "Control_0m"]
+    - Status_Time:
+        g: ["Treatment_120m", "Control_0m"]
+        subset: ["Tissue", "left ear"]
+    - Status_Time:
+        g: ["Treatment_120m", "Control_0m"]
+        subset: ["Tissue", "right ear"]
+    - Status_Time:
+        g: ["Treatment_120m", "Treatment_0m"]
+    - Status_Time:
+        g: ["Treatment_120m", "Treatment_0m"]
+        subset: ["Tissue", "left ear"]
+    - Status_Time:
+        g: ["Treatment_120m", "Treatment_0m"]
+        subset: ["Tissue", "right ear"]
+    - Status_Time:
+        g: ["Control_120m", "Control_0m"]
+    - Status_Time:
+        g: ["Control_120m", "Control_0m"]
+        subset: ["Tissue", "left ear"]
+    - Status_Time:
+        g: ["Control_120m", "Control_0m"]
+        subset: ["Tissue", "right ear"]
+
+    - Group:
+        g: ["Treatment_left ear", "Treatment_right ear", "Control_left ear", "Control_right ear"]
+        subset: []
+    - Group:
+        g: ["Treatment_left ear", "Treatment_right ear", "Control_left ear", "Control_right ear"]
+        subset: ["Time", "120m"]
+    - Group:
+        g: ["Treatment_left ear", "Treatment_right ear", "Control_left ear", "Control_right ear"]
+        subset: ["Time", "0m"]
+
+    - Tissue:
+        g: ["left ear", "right ear"]
+        paired: [Mouse]
+        subset: ["Status", "Treatment"]
+    - Tissue:
+        g: ["left ear", "right ear"]
+        paired: [Mouse]
+        subset: ["Status", "Control"]
+    - Tissue:
+        g: ["left ear", "right ear"]
+        paired: [Mouse]
+        subset: ["Time", "0m"]
+    - Tissue:
+        g: ["left ear", "right ear"]
+        paired: [Mouse]
+        subset: ["Time", "120m"]
+    - Tissue:
+        g: ["left ear", "right ear"]
+        paired: [Mouse]
+        subset: ["Status_Time", "Treatment_120m"]
+    - Tissue:
+        g: ["left ear", "right ear"]
+        paired: [Mouse]
+        subset: ["Status_Time", "Control_120m"]
+    - Tissue:
+        g: ["left ear", "right ear"]
+        paired: [Mouse]
+        subset: ["Status_Time", "Treatment_0m"]
+    - Tissue:
+        g: ["left ear", "right ear"]
+        paired: [Mouse]
+        subset: ["Status_Time", "Control_0m"]
+
+    - Time:
+        g: ["120m", "0m"]
+    - Time:
+        g: ["120m", "0m"]
+        subset: ["Status", "Treatment"]
+    - Time:
+        g: ["120m", "0m"]
+        subset: ["Status", "Control"]
+
+    - Tissue_Time:
+        g: ["left ear_120m", "right ear_0m"]
+        subset: ["Status", "Treatment"]
+    - Tissue_Time:
+        g: ["left ear_120m", "right ear_0m"]
+        subset: ["Status", "Control"]
+    - Tissue_Time:
+        g: ["left ear_120m", "left ear_0m"]
+        subset: ["Status", "Treatment"]
+    - Tissue_Time:
+        g: ["left ear_120m", "left ear_0m"]
+        subset: ["Status", "Control"]
+    - Tissue_Time:
+        g: ["right ear_120m", "right ear_0m"]
+        subset: ["Status", "Treatment"]
+    - Tissue_Time:
+        g: ["right ear_120m", "right ear_0m"]
+        subset: ["Status", "Control"]
+
+comp_diff_exp_values_heatmap_plot:
+  diff_exp_logs: ["_log2"]
+  test_values: ["ttest_adjp", "fc", "auc_value"]
+  comparisons:
+    - Tissue:
+        g: ["left ear", "right ear"]
+        subset: ["Status", "Treatment"]
+    - Tissue:
+        g: ["left ear", "right ear"]
+        subset: ["Status_Time", "Treatment_120m"]
+    - Tissue_Time:
+        g: ["left ear_120m", "right ear_0m"]
+        subset: ["Status", "Treatment"]
+    - Tissue:
+        g: ["left ear", "right ear"]
+        subset: ["Status", "Control"]
+    - Tissue:
+        g: ["left ear", "right ear"]
+        subset: ["Status_Time", "Control_120m"]
+
+    - Status_Time:
+        g: ["Treatment_120m", "Treatment_0m"]
+    - Status_Time:
+        g: ["Treatment_120m", "Treatment_0m"]
+        subset: ["Tissue", "left ear"]
+    - Status_Time:
+        g: ["Treatment_120m", "Treatment_0m"]
+        subset: ["Tissue", "right ear"]
+    - Status_Time:
+        g: ["Control_120m", "Control_0m"]
+    - Status_Time:
+        g: ["Control_120m", "Control_0m"]
+        subset: ["Tissue", "left ear"]
+
+    - Status:
+        g: ["Treatment", "Control"]
+        subset: []
+    - Status:
+        g: ["Treatment", "Control"]
+        subset: ["Time", "120m"]
+    - Status:
+        g: ["Treatment", "Control"]
+        subset: ["Tissue", "left ear"]
+    - Status:
+        g: ["Treatment", "Control"]
+        subset: ["Tissue", "right ear"]
+    - Status:
+        g: ["Treatment", "Control"]
+        subset: ["Tissue_Time", "left ear_120m"]
+
+    - Status_Time:
+        g: ["Treatment_120m", "Control_0m"]
+    - Status_Time:
+        g: ["Treatment_120m", "Control_0m"]
+        subset: ["Tissue", "left ear"]
+
+correlation_comp_time_heatmap_plot_table:
+  method: [pearson,spearman] 
+  adjustment: BH
+  identifier: ID
+  props: [Status, Group, Time]
+  scatter:
+    top_x: 10
+
+mirna_expression_over_time_box_plot:
+  polynom_degree: 2
+
+pathway_analysis_results_heatmap_plots:
+  filter_params:
+    min_pathway: 0
+    min_mirna: 2
+    sig_th: 0.05
+
+diff_exp_values_table:
+  diff_exp_logs: ["_log2"]
+  comparisons:
+    - Status:
+        g: [Treatment, Control]
+        subset: []
+    - Tissue:
+        g: ["left ear", "right ear"]
+        subset: ["Status", "Treatment"]
+    - Tissue:
+        g: ["left ear", "right ear"]
+        subset: ["Status", "Control"]
+    - Status:
+        g: ["Treatment", "Control"]
+        subset: ["Tissue", "left ear"]
+    - Status:
+        g: ["Treatment", "Control"]
+        subset: ["Tissue", "right ear"]
+
+    - Status:
+        g: [Treatment, Control]
+        subset: ["Time", "0m"]
+    - Status:
+        g: [Treatment, Control]
+        subset: ["Time", "10m"]    
+    - Status:
+        g: [Treatment, Control]
+        subset: ["Time", "30m"]
+    - Status:
+        g: [Treatment, Control]
+        subset: ["Time", "60m"]    
+    - Status:
+        g: [Treatment, Control]
+        subset: ["Time", "120m"]
+
+    - Tissue:
+        g: ["left ear", "right ear"]
+        subset: ["Status_Time", "Treatment_120m"]
+    - Tissue:
+        g: ["left ear", "right ear"]
+        subset: ["Status_Time", "Control_120m"]
+    - Status:
+        g: ["Treatment", "Control"]
+        subset: ["Tissue_Time", "left ear_120m"]
+    - Status:
+        g: ["Treatment", "Control"]
+        subset: ["Tissue_Time", "right ear_120m"]
